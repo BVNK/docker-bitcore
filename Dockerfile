@@ -8,4 +8,6 @@ RUN apt-get install -y libzmq3-dev build-essential curl
 
 RUN npm install -g bitcore@4.1.0 --unsafe-perm
 
-ENTRYPOINT [ "bitcored" ]
+COPY ./start-up.sh /root/start-up.sh
+
+ENTRYPOINT [ "/root/start-up.sh" ]

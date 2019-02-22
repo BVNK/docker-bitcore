@@ -1,5 +1,5 @@
 FROM node:4
-LABEL maintainer="nellcorp.com"
+LABEL maintainer="bvnk.co"
 
 EXPOSE 3001 8333 8332 18333 18332
 RUN apt-get update
